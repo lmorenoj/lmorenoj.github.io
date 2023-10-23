@@ -1,0 +1,10 @@
+Projet Tutoré    & 30h     &   L3     &   TP  &     2017  \\\hline
+Programmation Orientée Objet (C++)  & 30h     &   L1     &   TD/TP  &     2020  \\
+Modélisation des Processus & 180h     &   L2     &   TD/TP  &     2017  \\
+Metodologie de la Recherche & 45h     &   L3     &   TD/TP  &     2017  \\
+Programmation Orientée Objet (C\#) & 90h     &   L1     &   TD/TP  &     2018  \\
+Base de Données pour Logiciels & 75h     &   L3     &   TD/TP  &     2018  \\
+Developpement d'Applications Web (PHP/HTML) & 90h     &   L1     &   TD/TP  &     2018  \\
+Developpement d'Applications (Java) & 90h    &   L1     &   TD/TP  &     2018  \\
+Metodologie de la Recherche & 45h     &   L3     &   TD/TP  &     2018  \\
+Total d'heures    & 759h     &        &     & 

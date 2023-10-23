@@ -5,16 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Luis Moreno</title>
+    <!--
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" media="print" onload="this.media='all'"/>
     <noscript>
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap"/>
     </noscript>
+    -->
     <link href="css/font-awesome/css/all.min.css?ver=1.2.1" rel="stylesheet">
     <link href="css/mdb.min.css?ver=1.2.1" rel="stylesheet">
     <link href="css/aos.css?ver=1.2.1" rel="stylesheet">
     <link href="css/main.css?ver=1.2.1" rel="stylesheet">
+
+
+    <link rel="icon" type="image/png" href="cssTable/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="cssTable/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="cssTable/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="cssTable/animate.css">
+
+    <link rel="stylesheet" type="text/css" href="cssTable/select2.min.css">
+
+    <link rel="stylesheet" type="text/css" href="cssTable/perfect-scrollbar.css">
+
+    <link rel="stylesheet" type="text/css" href="cssTable/util.css">
+    <link rel="stylesheet" type="text/css" href="cssTable/main2.css">
     <noscript>
       <style type="text/css">
         [data-aos] {
@@ -23,8 +40,9 @@
         }
       </style>
     </noscript>
+
   </head>
-  <body class="bg-light" id="top">
+  <body class="bg-light" id="top"  onload="loadTableCourses()" >
     <header class="d-print-none">
       <div class="container text-center text-lg-left">
         <div class="pt-4 clearfix">
@@ -288,72 +306,316 @@
       </div>
     </div>
   </div>
-  <div class="shadow-1-strong bg-white my-5 p-5 d-print-none" id="portfolio">
-    <div class="portfolio-section">
+
+  <div class="shadow-1-strong bg-white my-5 p-5" id="publication">
+    <div class="publication-section">
       <h2 class="h2 fw-light mb-4">Publications</h2>
-      <div class="row g-0">
-        
-        <div class="col-md-6 d-flex align-items-center" data-aos="fade-left" data-aos-delay="100">
-          <div class="m-4 mt-md-2">
-            <p class="text-teal text-small">Frontend / HTML / CSS / JavaScript</p>
-            <h3>Photo Agency Website</h3>
-            <p class="text-muted">Built highly performant website front end for a Photography agency. Delivered codebase in HTML, CSS and modern JavaScript.</p>
+      <div class="timeline">
+        <div class="timeline-card timeline-card-success" data-aos="fade-left" data-aos-delay="0">
+          <div class="timeline-head px-4 pt-3">
+            <div class="h5">Journal papers<span class="text-muted h6"></span>          </div>
+          </div>
+          <div class="timeline-body px-4 pb-4">
+            <div class="text-muted text-small mb-3"> <hr size="2"></div>
+            <ol>
+              <li>
+                <div>
+                  <strong>Moreno Jiménez Luis-Gil</strong>, Torres-Moreno Juan-Manuel. 
+                  <a href="https://www.mdpi.com/1999-4893/16/3/142">Automatic Generation of Literary Sentences in French.</a> 
+                  <i>MDPI Algorithms (2023)</i>. 
+                </div>
+              </li>
+              <li>
+                <div>
+                  <strong> Moreno-Jiménez Luis-Gil</strong>, Torres-Moreno Juan-Manuel 
+                  <a href="https://ictt.univ-avignon.fr/wp-content/uploads/sites/9/2021/03/Spheres-2020-def.pdf">Génération de phrases littéraires : une approche combinant Traitement Automatique  des Langues et Apprentissage automatique</a>. 
+                  <i>Sphères: Objectivité dans la recherche scientifique (2021)</i>.
+                </div>
+              </li>
+              <li>
+                <div>
+                  <strong> Moreno-Jiménez Luis-Gil</strong>, Torres-Moreno Juan-Manuel, Wedemann Roseli S. 
+                  <a href="http://journal.sepln.org/sepln/ojs/ojs/index.php/pln/article/view/6273">Generation of Literary Sentences: a Preliminary Approach</a>. 
+                  <i>Procesamiento del Lenguaje Natural (2020)</i>. 
+                </div>
+              </li>
+              <li>
+                <div>
+                  <strong> Moreno-Jiménez Luis-Gil </strong>, Torres-Moreno Juan-Manuel, Wedemann Roseli S., SanJuan Eric. 
+                  <a href="https://dblp.org/db/journals/linguamatica/linguamatica12.html">Generación automática de frases literarias</a>. 
+                  <i>Linguamática. (2020) </i>
+                </div>
+              </li>
+            </ol>
           </div>
         </div>
-      </div>
-      <div class="row g-0 portfolio-reverse">
-        <div class="col-md-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
-          <div class="m-4 mt-md-2 text-end">
-            <p class="text-teal text-small">Graphic Design / Photoshop / Sketch</p>
-            <h3>Restaurant Website Design</h3>
-            <p class="text-muted">Web design for popular resturant chain involving complex layouts done in both Photoshop and Sketch. Collaborated with back-end and front-end team for finished product.</p>
+
+        <div class="timeline-card timeline-card-success" data-aos="fade-right" data-aos-delay="400">
+          <div class="timeline-head px-4 pt-3">
+            <div class="h5">Proceeding <span class="text-muted h6"></span>          </div>
+          </div>
+          <div class="timeline-body px-4 pb-4">
+            <div class="text-muted text-small mb-3"><hr size="2"></div>
+            <ul>
+              <li>
+                <div>
+                    <strong> Moreno-Jiménez Luis-Gil </strong>, Torres-Moreno Juan-Manuel.  
+                  <a href="https://journals.flvc.org/FLAIRS/article/view/133059">Automatic generation of paragraph templates using a Textual Energy approach: Applications in Literary Text production</a>. 
+                  <i>36th  International (FLAIRS) Conference. 2022 </i>
+                </div>
+              </li>
+
+              <li>
+                <div>
+                  Morgado Igor, <strong> Moreno-Jiménez Luis-Gil </strong>, Torres-Moreno Juan-Manuel,
+                  Wedemann Roseli S. 
+                  <a href="https://link.springer.com/chapter/10.1007/978-3-031-21689-3_19">MegaLite-PT : A Corpus of Literature in Portuguese
+                    for NLP</a>. 
+                  <i>11th Brazilian Conference on Intelligent Systems (BRACIS). pp. 251–265, 2022. </i>
+                </div>
+              </li>
+
+              <li>
+                <div>
+                  <strong> Moreno-Jiménez Luis-Gil </strong>, Torres-Moreno Juan-Manuel, Wedemann Roseli S. 
+                  <a href="https://sol.sbc.org.br/index.php/stil/article/view/17798">A Study for Literary Rhyme Generation based on Neuronal Representation, Semantics and Shallow Parsing</a>. 
+                  <i>Simpósio Brasileiro de Tecnologia da Informação e da Linguagem Humana (STIL). pp 190-198 2021. </i>
+                </div>
+              </li>
+
+              <li>
+                <div>
+                  <strong> Moreno-Jiménez Luis-Gil </strong>, Torres-Moreno Juan-Manuel, Gonzales-Gallardo Carlos-Emiliano. 
+                  <a href="https://www.rcs.cic.ipn.mx/2021_150_5/">Estudio de hiperparámetros de modelos neuronales en la generación de frases literarias</a>. 
+                  <i>13th Congreso Mexicano de Inteligencia Artificial COMIA. 2021 </i>
+                </div>
+              </li>
+
+              <li>
+                <div>
+                  <strong> Moreno-Jiménez Luis-Gil </strong>, Torres-Moreno Juan-Manuel. 
+                  <a href="https://link.springer.com/chapter/10.1007/978-3-030-80119-9_67">MegaLite-2: An Extended Bilingual Comparative Literary Corpus</a>. 
+                  <i>Intelligent Computing. Springer International Publishing. pp. 1014-1029, 2022 </i>
+                </div>
+              </li>
+
+              <li>
+                <div>
+                  <strong> Moreno-Jiménez Luis-Gil </strong>, Torres-Moreno Juan-Manuel. 
+                  <a href="https://aircconline.com/csit/abstract/v11n1/csit110109.html">Megalite: A New Spanish Literature Corpus for NLP Tasks</a>. 
+                  <i>8th International Conference on Artificial Intelligence and Applications (AIAP 2021). pp. 131-147 .2021 </i>
+                </div>
+              </li>
+
+              <li>
+                <div>
+                  <strong> Moreno-Jiménez Luis-Gil </strong>, Torres-Moreno Juan-Manuel, Wedemann Roseli S., Boucheneb Hanifa. 
+                  <a href="https://publications.polymtl.ca/48806/">FLE: A Fuzzy Logic Algorithm for Classification of Emotions in Literary Corpora</a>. 
+                  <i>12th International Joint Conference on Knowledge Discovery, Knowledge Engineering and Knowledge Management. pp. 202-209. 2020 </i>
+                </div>
+              </li>
+
+              <li>
+                <div>
+                  <strong> Moreno-Jiménez Luis-Gil </strong>, Torres-Moreno Juan-Manuel, Wedemann Roseli S. 
+                  <a href="#publication">LiSSS: A new multi-annotated multi-emotional corpus of Literary Spanish Sentences</a>. 
+                  <i>19th Mexican International Conference on Artifical Intelligence. pp 1139-1147. 2020 </i>
+                </div>
+              </li>
+
+              <li>
+                <div>
+                  <strong> Moreno-Jiménez Luis-Gil </strong>, Torres-Moreno Juan-Manuel, Wedemann Roseli S. 
+                  <a href="#publication">Literary Natural Language Generation with Psychological Traits</a>. 
+                  <i>25th International Conference on Natural Language \& Information Systems. pp 193-204.2020 </i>
+                </div>
+              </li>
+
+              <li>
+                <div>
+                  <strong> Moreno-Jiménez Luis-Gil </strong>, Torres-Moreno Juan-Manuel, Castro Noé, Sierra Gerardo. 
+                  <a href="#publication">Criminal Events Detection in News Stories Using Intuitive Classification</a>. 
+                  <i>16th Mexican International Conference on Artificial Intelligence. pp 120-132. 2018 </i>
+                </div>
+              </li>
+
+              <li>
+                <div>
+                  <strong> Moreno-Jiménez Luis-Gil </strong>, Torres-Moreno Juan-Manuel, Castro Noé. 
+                  <a href="#publication">Creación y clasificación de un corpus criminológico en español usando características lingüísticas superficiales.</a>. 
+                  <i>17th International Conference on Computational Linguistics and Intelligent Text Processing. pp. 107.118. 2016 </i>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="col-md-6"><a href="https://www.behance.net/" target="_blank"><img class="img-fluid" src="images/project-2.jpg" width="800" height="500"/></a></div>
-      </div>
-      <div class="row g-0">
-        <div class="col-md-6"><a href="https://dribbble.com/" target="_blank"><img class="img-fluid" src="images/project-3.jpg" width="800" height="500"/></a></div>
-        <div class="col-md-6 d-flex align-items-center" data-aos="fade-left" data-aos-delay="100">
-          <div class="m-4 mt-md-2">
-            <p class="text-teal text-small">Frontend / HTML / CSS / JavaScript</p>
-            <h3>E-Commerce Website</h3>
-            <p class="text-muted">Built highly performant website for an E-commerce Portal. Worked with back-end team to timely deliver codebase in HTML, CSS and modern JavaScript.</p>
+        <div class="timeline-card timeline-card-success" data-aos="fade-left" data-aos-delay="400">
+          <div class="timeline-head px-4 pt-3">
+            <div class="h5">Pre-prints<span class="text-muted h6"></span>          </div>
+          </div>
+          <div class="timeline-body px-4 pb-4">
+            <div class="text-muted text-small mb-3">2007 - 2011</div>
+            <ol>
+              <li>
+                <div>
+                  <strong>Moreno Jiménez Luis-Gil</strong>, Torres-Moreno Juan-Manuel. 
+                  <a href="https://arxiv.org/abs/2005.08223">LiSSS: A toy corpus of Literary Spanish Sentences Sentiment for Emotions Detection.</a> 
+                  <i>ArXiv e-prints. 2020</i>. 
+                </div>
+              </li>
+              <li>
+                <div>
+                  <strong> Moreno-Jiménez Luis-Gil</strong>, Torres-Moreno Juan-Manuel, Wedemann Roseli S.. 
+                  <a href="https://arxiv.org/abs/2001.11381">Generación automática de frases literarias en español</a>. 
+                  <i>ArXiv e-prints. 2020</i>.
+                </div>
+              </li>
+              <li>
+                <div>
+                  <strong> Moreno-Jiménez Luis-Gil</strong>, Torres-Moreno Juan-Manuel, Wedemann Roseli S. 
+                  <a href="#publication">Generación automática de frases literarias en español: Un experimento preliminar</a>. 
+                  <i>Libro de resumenes: Congreso Internacional de Lingüistica Computacional y de Corpus. pp. 61-65. 2020</i>. 
+                </div>
+              </li>
+            </ol>
           </div>
         </div>
       </div>
     </div>
   </div>
+
+
   <div class="shadow-1-strong bg-white my-5 p-5" id="references">
     <div class="reference-section">
-      <h2 class="h2 fw-light mb-4">References</h2>
+      <h2 class="h2 fw-light mb-4">Presentations</h2>
       <div class="row"> 
         <div class="col-md-6">
           <div class="d-flex mb-2">
-            <div class="avatar"><img src="images/reference-image-1.jpg" width="60" height="60"/></div>
+            <div class="avatar"><img src="images/utslogo.jpg" width="60" height="60"/></div>
             <div class="header-bio m-3 mb-0">
-              <h3 class="h6 mb-1" data-aos="fade-left" data-aos-delay="0">Aiyana</h3>
-              <p class="text-muted text-small" data-aos="fade-left" data-aos-delay="100">CEO / Web Design Company</p>
+              <h3 class="h6 mb-1" data-aos="fade-left" data-aos-delay="0">Universidad Tecnologica de la Selva</h3>
+              <p class="text-muted text-small" data-aos="fade-left" data-aos-delay="100">Ocosingo, Mexique - nov / 2020</p>
             </div>
           </div>
           <div class="d-flex"><i class="text-secondary fas fa-quote-left"></i>
-            <p class="lead mx-2" data-aos="fade-left" data-aos-delay="100">Walter displays exemplary professionalism and is able to take on challenges. He learns quickly and is an asset to any team.</p>
+            <p class="lead mx-2" data-aos="fade-left" data-aos-delay="100">Creatividad Computacional: Un nuevo paradigma para la creacion de artefactos literarios.</p>
           </div>
         </div>
         <div class="col-md-6">
           <div class="d-flex mb-2">
-            <div class="avatar"><img src="images/reference-image-2.jpg" width="60" height="60"/></div>
+            <div class="avatar"><img src="images/uerjlogo.jpg" width="60" height="60"/></div>
             <div class="header-bio m-3 mb-0">
-              <h3 class="h6 mb-1" data-aos="fade-left" data-aos-delay="0">Alexander</h3>
-              <p class="text-muted text-small" data-aos="fade-left" data-aos-delay="100">Front-end Developer / Web Design Company</p>
+              <h3 class="h6 mb-1" data-aos="fade-left" data-aos-delay="0">Universidade do Estado do Rio do Janeiro</h3>
+              <p class="text-muted text-small" data-aos="fade-left" data-aos-delay="100">Rio do Janeiro, Brasil - fev / 2021</p>
             </div>
           </div>
           <div class="d-flex"><i class="text-secondary fas fa-quote-left"></i>
-            <p class="lead mx-2" data-aos="fade-left" data-aos-delay="100">Walter is a great co-worker and problem solver. He is quick to extend his helping hand and makes a good team player.</p>
+            <p class="lead mx-2" data-aos="fade-left" data-aos-delay="100">Computational Creativity: Development of literary artifacts through Artificial Intelligence.</p>
+          </div>
+        </div>
+      </div>
+<br>
+      <div class="row"> 
+        <div class="col-md-6">
+          <div class="d-flex mb-2">
+            <div class="avatar"><img src="images/uerjlogo.jpg" width="60" height="60"/></div>
+            <div class="header-bio m-3 mb-0">
+              <h3 class="h6 mb-1" data-aos="fade-left" data-aos-delay="0">Université d'Avignon</h3>
+              <p class="text-muted text-small" data-aos="fade-left" data-aos-delay="100">Avignon, France - March 2019</p>
+            </div>
+          </div>
+          <div class="d-flex"><i class="text-secondary fas fa-quote-left"></i>
+            <p class="lead mx-2" data-aos="fade-left" data-aos-delay="100">Conception des modèles computationnelles pour la génération de phrases littéraires.</p>
           </div>
         </div>
       </div>
     </div>
   </div>
+
+  <div class="shadow-1-strong bg-white my-5 p-5 d-print-none" id="cursos">
+    <div class="portfolio-section">
+      <h2 class="h2 fw-light mb-4">Teaching experiences</h2>
+      
+      <div class="row g-0" data-aos="fade-in" data-aos-delay="300">
+        <script>
+
+          function loadTableCourses(){           
+           var courses = [
+            ["Projet Tutoré" , "30h","L3" ,"TP " , 2017 ],
+            ["Programmation Orientée Objet (C++) " , "30h" ,"L1" ,"TD/TP " ,"  2020 "],
+            ["Modélisation des Processus" , "180h" ,"L2", "TD/TP " ,"  2017 "],
+            ["Metodologie de la Recherche" , "45h" ,"L3" ,"TD/TP " ,"  2017 "],
+            ["Programmation Orientée Objet (C\#)" , "90h" ,"L1"  ,"TD/TP " ,"  2018 "],
+            ["Base de Données pour Logiciels" , "75h" ,"L3" ,"TD/TP " ,"  2018 "],
+            ["Developpement d'Applications Web (PHP/HTML)" , "90h" ,"L1" ,"TD/TP " ,"  2018 "],
+            ["Developpement d'Applications (Java)" , "90h" ,"L1" ,"TD/TP " ,"  2018 "],
+            ["Metodologie de la Recherche" , "45h" ,"L3" ,"TD/TP " ,"  2018 "],
+            ["Programmation Orientée Objet (C++) ","30h   ","  L1   ","  TD/TP","    2019  "],
+            ["Bases de Programmation (Python) ","54h   ","  L1   ","  TD/TP","    2020  "],
+            ["Bases de Programmation (C++) ","54h   ","  L1   ","  TD/TP","    2021  "],
+            ["Architecture Web et base de données ","24h   ","  L2   ","  TP","    2021  "],
+            ["Génie Logiciel  ","27h   ","  L3   ","  TP","    2021  "],
+            ["Projet - Urbanisation  ","18h   ","  M1   ","  TP","    2021  "],
+            ["Programmation Parallèle (C++)","21h   ","  M1   ","  TP","    2021  "],
+            ["Application d'innovation ","21h   ","  M2   ","  TD/TP","    2021  "],
+            ["Analyse en ligne (OLAP) et visualisation de données","12h   ","  M1   ","  TD","    2022  "],
+            ["Apprentisage Incremental ","12h   ","  M2   ","  TD","    2022  "],
+            ["Supervision de projet","5h   ","  M1   ","  TDI","    2021  "],
+            ["Bases de Programmation (C++) ","54h   ","  L1   ","  TD/TP","    2022  "],
+            ["Développement Web : conception internet  ","12h   ","  L1   ","  TP","    2022  "],
+            ["Génie Logiciel  ","27h   ","  L3   ","  TP","    2022  "],
+            ["Modelisation Objet et UML","15h   ","  L3   ","  TP","    2022  "],
+            ["Application d'innovation ","21h   ","  M2   ","  TD/TP","    2022  "],
+            ["Analyse en ligne (OLAP) et visualisation de données ","12h   ","  M1   ","  TD","    2023  "],
+            ["Projet de Programmation  ","18h   ","  L1   ","  TP","    2023  "],
+            ["Architecture Web et base de données ","24h   ","  L2   ","  TP","    2023  "],
+            ["Recherche d'information et site Web","56h   ","  L3   ","  TD","    2023  "],
+            ["Cours PIX  ","42h   ","  L1   ","  TP","    2023  "],
+            ["Cours PIX  ","3h   ","  L1   ","  CM","    2023  "],
+            ["Mathematiques  ","21h   ","  L3   ","  TP","    2023  "],
+            ["Total d'heures"," 1522h   ","     ","  ","      "] ,
+           ];
+           
+            var tbl = document.getElementById("table");
+            var tbody= document.createElement("tbody");
+            tbl.appendChild(tbody);
+            courses.forEach(course => {
+              const r = document.createElement("tr");
+              r.setAttribute("class","row100");
+              tbody.appendChild(r);
+              course.forEach(data => {
+                var c = document.createElement("td");
+                c.setAttribute("class","column100 column1");
+                c.setAttribute("data-column","column1");
+                var text = document.createTextNode(data);
+                c.appendChild(text);
+                r.appendChild(c);
+              });
+            });
+          }
+        </script>
+
+        <div class="wrap-table100">
+          <div class="table100 ver1 m-b-110"> 
+            <table id="table" data-vertable="ver1">
+              <thead>
+                <tr class="row100 head">
+                  <th class="column100 column1" data-column="column1"><strong>Course</strong> </th>
+                  <th class="column100 column1" data-column="column1"><strong> Hours</strong></th>
+                  <th class="column100 column1" data-column="column1"><strong>Level</strong></th>
+                  <th class="column100 column1" data-column="column1"><strong> Type</strong></th>
+                  <th class="column100 column1" data-column="column1"><strong> Year</strong></th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+
   <div class="shadow-1-strong bg-white my-5 p-5" id="contact">
     <div class="contant-section">
       <h2 class="h2 fw-light text mb-4">Contact</h2>
@@ -361,9 +623,9 @@
         <div class="col-md-5" data-aos="fade-left" data-aos-delay="200">
           <div class="mt-1">
             <div class="h6"><i class="fas fa-phone pe-2 text-muted" style="width:24px;opacity:0.85;"></i> +0718-111-0011</div>
-            <div class="h6"><i class="far fa-envelope pe-2 text-muted" style="width:24px;opacity:0.85;"></i> walter@company.com</div>
+            <div class="h6"><i class="far fa-envelope pe-2 text-muted" style="width:24px;opacity:0.85;"></i> luis-gil.moreno_jimenez@sorbonne-universite.fr</div>
           </div>
-          <div class="mt-5 d-print-none"><form action="https://formspree.io/your@email.com"
+          <div class="mt-5 d-print-none"><form action="https://formspree.io/luis-gil.moreno_jimenez@sorbonne-universite.fr"
     method="POST">
   <div class="form-outline mb-4">
     <input type="text" id="name" class="form-control" required/>
@@ -390,7 +652,7 @@
     <footer class="pt-4 pb-4 text-muted text-center d-print-none">
       <div class="container">
         <div class="my-3">
-          <div class="h4">Walter Patterson</div>
+          <div class="h4">Luis Moreno</div>
           <div class="footer-nav">
             <nav role="navigation">
               <ul class="nav justify-content-center">
