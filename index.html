@@ -40,6 +40,29 @@
         }
       </style>
     </noscript>
+    <style>
+      .pagination {
+        display: inline-block;
+      }
+      
+      .pagination a {
+        color: black;
+        float: left;
+        padding: 8px 16px;
+        text-decoration: none;
+      }
+      
+      .pagination a.active {
+        background-color: #4CAF50;
+        color: white;
+        border-radius: 5px;
+      }
+      
+      .pagination a:hover:not(.active) {
+        background-color: #ddd;
+        border-radius: 5px;
+      }
+      </style>
 
   </head>
   <body class="bg-light" id="top"  onload="loadTableCourses()" >
@@ -70,7 +93,7 @@
         </div>
       </div>
     </header>
-    <div class="page-content">
+  <div class="page-content">
       <div class="container">
 <div class="resume-container">
   <div class="shadow-1-strong bg-white my-5" id="intro">
@@ -485,13 +508,13 @@
   </div>
 
 
-  <div class="shadow-1-strong bg-white my-5 p-5" id="references">
+  <div class="shadow-1-strong bg-white my-5 p-5" id="presentations">
     <div class="reference-section">
       <h2 class="h2 fw-light mb-4">Presentations</h2>
       <div class="row"> 
         <div class="col-md-6">
           <div class="d-flex mb-2">
-            <div class="avatar"><img src="images/utslogo.jpg" width="60" height="60"/></div>
+            <div class="avatar"><img src="images/logouts.png" width="60" height="60"/></div>
             <div class="header-bio m-3 mb-0">
               <h3 class="h6 mb-1" data-aos="fade-left" data-aos-delay="0">Universidad Tecnologica de la Selva</h3>
               <p class="text-muted text-small" data-aos="fade-left" data-aos-delay="100">Ocosingo, Mexique - nov / 2020</p>
@@ -503,7 +526,7 @@
         </div>
         <div class="col-md-6">
           <div class="d-flex mb-2">
-            <div class="avatar"><img src="images/uerjlogo.jpg" width="60" height="60"/></div>
+            <div class="avatar"><img src="images/logouerj.png" width="60" height="60"/></div>
             <div class="header-bio m-3 mb-0">
               <h3 class="h6 mb-1" data-aos="fade-left" data-aos-delay="0">Universidade do Estado do Rio do Janeiro</h3>
               <p class="text-muted text-small" data-aos="fade-left" data-aos-delay="100">Rio do Janeiro, Brasil - fev / 2021</p>
@@ -514,11 +537,12 @@
           </div>
         </div>
       </div>
-<br>
+      <br><br>
+  
       <div class="row"> 
         <div class="col-md-6">
           <div class="d-flex mb-2">
-            <div class="avatar"><img src="images/uerjlogo.jpg" width="60" height="60"/></div>
+            <div class="avatar"><img src="images/logoau.png" width="60" height="60"/></div>
             <div class="header-bio m-3 mb-0">
               <h3 class="h6 mb-1" data-aos="fade-left" data-aos-delay="0">Université d'Avignon</h3>
               <p class="text-muted text-small" data-aos="fade-left" data-aos-delay="100">Avignon, France - March 2019</p>
@@ -539,43 +563,55 @@
       <div class="row g-0" data-aos="fade-in" data-aos-delay="300">
         <script>
 
-          function loadTableCourses(){           
+          function loadTableCourses(){      
+            
+            
            var courses = [
             ["Projet Tutoré" , "30h","L3" ,"TP " , 2017 ],
-            ["Programmation Orientée Objet (C++) " , "30h" ,"L1" ,"TD/TP " ,"  2020 "],
-            ["Modélisation des Processus" , "180h" ,"L2", "TD/TP " ,"  2017 "],
-            ["Metodologie de la Recherche" , "45h" ,"L3" ,"TD/TP " ,"  2017 "],
-            ["Programmation Orientée Objet (C\#)" , "90h" ,"L1"  ,"TD/TP " ,"  2018 "],
-            ["Base de Données pour Logiciels" , "75h" ,"L3" ,"TD/TP " ,"  2018 "],
-            ["Developpement d'Applications Web (PHP/HTML)" , "90h" ,"L1" ,"TD/TP " ,"  2018 "],
-            ["Developpement d'Applications (Java)" , "90h" ,"L1" ,"TD/TP " ,"  2018 "],
-            ["Metodologie de la Recherche" , "45h" ,"L3" ,"TD/TP " ,"  2018 "],
-            ["Programmation Orientée Objet (C++) ","30h   ","  L1   ","  TD/TP","    2019  "],
-            ["Bases de Programmation (Python) ","54h   ","  L1   ","  TD/TP","    2020  "],
-            ["Bases de Programmation (C++) ","54h   ","  L1   ","  TD/TP","    2021  "],
-            ["Architecture Web et base de données ","24h   ","  L2   ","  TP","    2021  "],
-            ["Génie Logiciel  ","27h   ","  L3   ","  TP","    2021  "],
-            ["Projet - Urbanisation  ","18h   ","  M1   ","  TP","    2021  "],
-            ["Programmation Parallèle (C++)","21h   ","  M1   ","  TP","    2021  "],
-            ["Application d'innovation ","21h   ","  M2   ","  TD/TP","    2021  "],
-            ["Analyse en ligne (OLAP) et visualisation de données","12h   ","  M1   ","  TD","    2022  "],
-            ["Apprentisage Incremental ","12h   ","  M2   ","  TD","    2022  "],
-            ["Supervision de projet","5h   ","  M1   ","  TDI","    2021  "],
-            ["Bases de Programmation (C++) ","54h   ","  L1   ","  TD/TP","    2022  "],
-            ["Développement Web : conception internet  ","12h   ","  L1   ","  TP","    2022  "],
-            ["Génie Logiciel  ","27h   ","  L3   ","  TP","    2022  "],
-            ["Modelisation Objet et UML","15h   ","  L3   ","  TP","    2022  "],
-            ["Application d'innovation ","21h   ","  M2   ","  TD/TP","    2022  "],
-            ["Analyse en ligne (OLAP) et visualisation de données ","12h   ","  M1   ","  TD","    2023  "],
-            ["Projet de Programmation  ","18h   ","  L1   ","  TP","    2023  "],
-            ["Architecture Web et base de données ","24h   ","  L2   ","  TP","    2023  "],
-            ["Recherche d'information et site Web","56h   ","  L3   ","  TD","    2023  "],
-            ["Cours PIX  ","42h   ","  L1   ","  TP","    2023  "],
-            ["Cours PIX  ","3h   ","  L1   ","  CM","    2023  "],
-            ["Mathematiques  ","21h   ","  L3   ","  TP","    2023  "],
-            ["Total d'heures"," 1522h   ","     ","  ","      "] ,
+            ["Programmation Orientée Objet (C++) " , "30h" ,"L1" ,"TD/TP " ,2020 ],
+            ["Modélisation des Processus" , "180h" ,"L2", "TD/TP " ,2017 ],
+            ["Metodologie de la Recherche" , "45h" ,"L3" ,"TD/TP " ,2017 ],
+            ["Programmation Orientée Objet (C\#)" , "90h" ,"L1"  ,"TD/TP " ,2018 ],
+            ["Base de Données pour Logiciels" , "75h" ,"L3" ,"TD/TP " ,2018 ],
+            ["Developpement d'Applications Web (PHP/HTML)" , "90h" ,"L1" ,"TD/TP " ,2018 ],
+            ["Developpement d'Applications (Java)" , "90h" ,"L1" ,"TD/TP " ,2018 ],
+            ["Metodologie de la Recherche" , "45h" ,"L3" ,"TD/TP " ,2018 ],
+            ["Programmation Orientée Objet (C++) ","30h   ","  L1   ","  TD/TP",2019  ],
+            ["Bases de Programmation (Python) ","54h   ","  L1   ","  TD/TP",2020  ],
+            ["Bases de Programmation (C++) ","54h   ","  L1   ","  TD/TP",2021  ],
+            ["Architecture Web et base de données ","24h   ","  L2   ","  TP",2021  ],
+            ["Génie Logiciel  ","27h   ","  L3   ","  TP",2021  ],
+            ["Projet - Urbanisation  ","18h   ","  M1   ","  TP",2021  ],
+            ["Programmation Parallèle (C++)","21h   ","  M1   ","  TP",2021  ],
+            ["Application d'innovation ","21h   ","  M2   ","  TD/TP",2021  ],
+            ["Analyse en ligne (OLAP) et visualisation de données","12h   ","  M1   ","  TD",2022  ],
+            ["Apprentisage Incremental ","12h   ","  M2   ","  TD",2022  ],
+            ["Supervision de projet","5h   ","  M1   ","  TDI",2021  ],
+            ["Bases de Programmation (C++) ","54h   ","  L1   ","  TD/TP",2022  ],
+            ["Développement Web : conception internet  ","12h   ","  L1   ","  TP",2022  ],
+            ["Génie Logiciel  ","27h   ","  L3   ","  TP",2022  ],
+            ["Modelisation Objet et UML","15h   ","  L3   ","  TP",2022  ],
+            ["Application d'innovation ","21h   ","  M2   ","  TD/TP",2022  ],
+            ["Analyse en ligne (OLAP) et visualisation de données ","12h   ","  M1   ","  TD",2023  ],
+            ["Projet de Programmation  ","18h   ","  L1   ","  TP",2023  ],
+            ["Architecture Web et base de données ","24h   ","  L2   ","  TP",2023  ],
+            ["Recherche d'information et site Web","56h   ","  L3   ","  TD",2023  ],
+            ["Cours PIX  ","42h   ","  L1   ","  TP",2023  ],
+            ["Cours PIX  ","3h   ","  L1   ","  CM",2023  ],
+            ["Mathematiques  ","21h   ","  L3   ","  TP",2023  ],
+            ["Total d'heures"," 1522h   ","     ","  ",""      ] ,
            ];
-           
+            courses.sort(sortFunction);
+
+            function sortFunction(a, b) {
+                if (a[4] === b[4]) {
+                    return 0;
+                }
+                else {
+                    return (a[4] > b[4]) ? -1 : 1;
+                }
+            }
+
             var tbl = document.getElementById("table");
             var tbody= document.createElement("tbody");
             tbl.appendChild(tbody);
@@ -592,11 +628,12 @@
                 r.appendChild(c);
               });
             });
+
           }
         </script>
 
         <div class="wrap-table100">
-          <div class="table100 ver1 m-b-110"> 
+          <div class="table100 ver1 m-b-110", id="table100"> 
             <table id="table" data-vertable="ver1">
               <thead>
                 <tr class="row100 head">
@@ -610,11 +647,9 @@
             </table>
           </div>
         </div>
-        
       </div>
     </div>
   </div>
-
 
   <div class="shadow-1-strong bg-white my-5 p-5" id="contact">
     <div class="contant-section">
@@ -622,8 +657,7 @@
       <div class="row mb-4">
         <div class="col-md-5" data-aos="fade-left" data-aos-delay="200">
           <div class="mt-1">
-            <div class="h6"><i class="fas fa-phone pe-2 text-muted" style="width:24px;opacity:0.85;"></i> +0718-111-0011</div>
-            <div class="h6"><i class="far fa-envelope pe-2 text-muted" style="width:24px;opacity:0.85;"></i> luis-gil.moreno_jimenez@sorbonne-universite.fr</div>
+            <div class="h6"><i class="far fa-envelope pe-2 text-muted" style="width:24px;opacity:0.85;"></i> luis-gil[dot]moreno_jimenez[at]sorbonne-universite[dot]fr</div>
           </div>
           <div class="mt-5 d-print-none"><form action="https://formspree.io/luis-gil.moreno_jimenez@sorbonne-universite.fr"
     method="POST">
@@ -643,7 +677,9 @@
 </form>
           </div>
         </div>
-        <div class="col-md-7 d-print-none" data-aos="zoom-in" data-aos-delay="100"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d496.9774799129763!2d-73.98032087190995!3d40.765927126473905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258f9cfcb250d%3A0xdb570ddcb766e3a8!2sNew%20York%20City%20Center!5e0!3m2!1sen!2sin!4v1614183731149!5m2!1sen!2sin" width="500" height="400" style="border:0;width:100%;" allowfullscreen="" loading="lazy"></iframe></div>
+        <div class="col-md-7 d-print-none" data-aos="zoom-in" data-aos-delay="100">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.2984946220854!2d2.338982177085274!3d48.8525181713314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671de5e100001%3A0x3d907fa8494b6447!2sBiblioth%C3%A8que%20Serpente%20-%20Sorbonne%20Universit%C3%A9!5e0!3m2!1ses!2sfr!4v1698313560727!5m2!1ses!2sfr" width="500" height="400" style="border:0;width:100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
       </div>
     </div>
   </div>
@@ -667,10 +703,6 @@
               </ul>
             </nav>
           </div>
-        </div>
-        <div class="text-small">
-          <div class="mb-1">&copy; Material Resume. All rights reserved.</div>
-          <div>Design - <a href="https://templateflip.com/" target="_blank">TemplateFlip</a></div>
         </div>
       </div>
     </footer>
